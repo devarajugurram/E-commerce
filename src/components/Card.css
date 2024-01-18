@@ -1,0 +1,101 @@
+.card {
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease; 
+
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card:hover {
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.7);
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4caf50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    cursor:pointer;
+  }
+  .btn:hover {
+    background-color: #45a049;
+  }
+  .quantity{
+      float: right;
+  }
+  .card-reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity {
+    width: 30px;
+  height: 30px;
+  font-size: 18px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  }
+  .quantity:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .quantity:active {
+    background-color: #e0e0e0;
+  }
+
+
+.size {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.size:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.size::after {
+  content: '\25BC'; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+.size option {
+  padding: 8px;
+}
+
+
+.size option:checked {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.size:active,
+.size:focus {
+  background-color: #f1f1f1;
+}

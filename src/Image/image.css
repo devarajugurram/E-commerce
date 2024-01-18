@@ -1,0 +1,10 @@
+.image-slider {
+    display: flex;
+    justify-content: center;
+}
+.image-slider img {
+    display: cover;
+    position: absolute;
+    width:100%;
+    height:94.8%;
+}
